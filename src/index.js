@@ -23,7 +23,7 @@ module.exports = function count(s, pairs) {
     cycle *= pairs[i][0]
   }
 
-  if (cycle > 200000000) return -1
+  if (cycle > 100000000) return -1
 
   let gcds = new Array(cycle+ml).fill()
   for (let i=0; i<gcds.length; i++){
