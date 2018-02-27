@@ -1,4 +1,4 @@
-3const divAns = 1000000007
+const divAns = 1000000007
 
 const gcdofzeroiszero = false //it is not, gcd(N,0) = N, 
                        //read https://proofwiki.org/wiki/Existence_of_Greatest_Common_Divisor
