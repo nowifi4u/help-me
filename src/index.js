@@ -1,4 +1,4 @@
-const divAns = 1000000007
+3const divAns = 1000000007
 
 const gcdofzeroiszero = false //it is not, gcd(N,0) = N, 
                        //read https://proofwiki.org/wiki/Existence_of_Greatest_Common_Divisor
@@ -23,7 +23,7 @@ module.exports = function count(s, pairs) {
     cycle *= pairs[i][0]
   }
 
-  if (cycle > 400000000) return -1
+  if (cycle > 300000000) return -1
 
   let gcds = new Array(cycle+ml).fill()
   for (let i=0; i<gcds.length; i++){
