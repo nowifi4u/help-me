@@ -1,7 +1,8 @@
 const divAns = 1000000007
 
-const gcdofzeroiszero = true //it is not, gcd(N,0) = N, 
+const gcdofzeroiszero = false //it is not, gcd(N,0) = N, 
                        //read https://proofwiki.org/wiki/Existence_of_Greatest_Common_Divisor
+                       //Наконец сделали верные тесты :D
 
 function gcd(a, b) {
   if (b === 0) return a;
@@ -48,7 +49,7 @@ module.exports = function count(s, pairs) {
     ans = (ans*pairs[i][1]) % divAns;
   }
  
-  //if (gcdofzeroiszero && mask[0] === 0) ans--
+  if (gcdofzeroiszero && mask[0] === 0) ans--
   console.log(ans)
   return ans;
 }
